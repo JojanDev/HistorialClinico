@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ADSO\\2894667\\C#\\HistorialClinico\\HistorialClinico.csproj": {}
+    "D:\\adso\\2894667\\JohanDelgado\\HistorialClinico\\HistorialClinico.csproj": {}
   },
   "projects": {
-    "D:\\ADSO\\2894667\\C#\\HistorialClinico\\HistorialClinico.csproj": {
+    "D:\\adso\\2894667\\JohanDelgado\\HistorialClinico\\HistorialClinico.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ADSO\\2894667\\C#\\HistorialClinico\\HistorialClinico.csproj",
+        "projectUniqueName": "D:\\adso\\2894667\\JohanDelgado\\HistorialClinico\\HistorialClinico.csproj",
         "projectName": "HistorialClinico",
-        "projectPath": "D:\\ADSO\\2894667\\C#\\HistorialClinico\\HistorialClinico.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "D:\\ADSO\\2894667\\C#\\HistorialClinico\\obj\\",
+        "projectPath": "D:\\adso\\2894667\\JohanDelgado\\HistorialClinico\\HistorialClinico.csproj",
+        "packagesPath": "C:\\Users\\Windows 10\\.nuget\\packages\\",
+        "outputPath": "D:\\adso\\2894667\\JohanDelgado\\HistorialClinico\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Windows 10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

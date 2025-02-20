@@ -1,0 +1,15 @@
+D:\adso\2894667\JohanDelgado\HistorialClinico\bin\Debug\net8.0\HistorialClinico.exe
+D:\adso\2894667\JohanDelgado\HistorialClinico\bin\Debug\net8.0\HistorialClinico.deps.json
+D:\adso\2894667\JohanDelgado\HistorialClinico\bin\Debug\net8.0\HistorialClinico.runtimeconfig.json
+D:\adso\2894667\JohanDelgado\HistorialClinico\bin\Debug\net8.0\HistorialClinico.dll
+D:\adso\2894667\JohanDelgado\HistorialClinico\bin\Debug\net8.0\HistorialClinico.pdb
+D:\adso\2894667\JohanDelgado\HistorialClinico\obj\Debug\net8.0\HistorialClinico.GeneratedMSBuildEditorConfig.editorconfig
+D:\adso\2894667\JohanDelgado\HistorialClinico\obj\Debug\net8.0\HistorialClinico.AssemblyInfoInputs.cache
+D:\adso\2894667\JohanDelgado\HistorialClinico\obj\Debug\net8.0\HistorialClinico.AssemblyInfo.cs
+D:\adso\2894667\JohanDelgado\HistorialClinico\obj\Debug\net8.0\HistorialClinico.csproj.CoreCompileInputs.cache
+D:\adso\2894667\JohanDelgado\HistorialClinico\obj\Debug\net8.0\HistorialClinico.sourcelink.json
+D:\adso\2894667\JohanDelgado\HistorialClinico\obj\Debug\net8.0\HistorialClinico.dll
+D:\adso\2894667\JohanDelgado\HistorialClinico\obj\Debug\net8.0\refint\HistorialClinico.dll
+D:\adso\2894667\JohanDelgado\HistorialClinico\obj\Debug\net8.0\HistorialClinico.pdb
+D:\adso\2894667\JohanDelgado\HistorialClinico\obj\Debug\net8.0\HistorialClinico.genruntimeconfig.cache
+D:\adso\2894667\JohanDelgado\HistorialClinico\obj\Debug\net8.0\ref\HistorialClinico.dll
