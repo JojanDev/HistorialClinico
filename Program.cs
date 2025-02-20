@@ -56,7 +56,7 @@ namespace HistorialClinico
         {
             if (validarLista())
             {
-                Console.Write("\nIngrese el indice de la mascota a añadir el antecendente: ");
+                Console.Write("\nIngrese el indice de la mascota a añadir el historial: ");
                 int indice = int.Parse(Console.ReadLine());
 
                 Console.Write("Ingrese la informacion de el antecendente: ");
@@ -70,7 +70,7 @@ namespace HistorialClinico
             }
             else
             {
-                Console.WriteLine("NO SE HA REGISTRADO NINGUNA MASCOTA, NO SE PUEDE AÑADIR UN HISTORIAL\n");
+                Console.WriteLine("\nNO SE HA REGISTRADO NINGUNA MASCOTA, NO SE PUEDE AÑADIR UN HISTORIAL\n");
             }
         }
 
@@ -78,8 +78,16 @@ namespace HistorialClinico
         {
             if (validarLista())
             {
-                Console.Write("\nIngrese el indice de la mascota a mostrar el antecedente: ");
-                int indice = int.Parse(Console.ReadLine());
+                int indice;
+                do
+                {
+                    Console.Write("\nIngrese el indice de la mascota a mostrar el historial: ");
+                    indice = int.Parse(Console.ReadLine());
+                    if (indice > listaMascotas.Count && indice < 0)
+                    {
+                        Console.WriteLine("ERROR: INGRESE UN INDICE VALIDO");
+                    }
+                } while (indice > listaMascotas.Count && indice < 0);
 
                 List<Historial> historial = listaMascotas[indice - 1].historiales;
 
@@ -87,7 +95,8 @@ namespace HistorialClinico
                 {
                     for (int i = 0; i < historial.Count; i++)
                     {
-                        Console.WriteLine($"-HISTORIAL {i+1}. Fecha: {historial[i].Fecha} \n" +
+                        Console.WriteLine($"\n- HISTORIAL {i+1}. Fecha: {historial[i].Fecha} \n" +
+                            $"Nombre: {listaMascotas[i].Nombre} | RAZA: {listaMascotas[i].Raza} | EDAD: {listaMascotas[i].Edad} \n" +
                             $"Descripcion: {historial[i].Detalles}");
                     }
                 }
@@ -96,11 +105,10 @@ namespace HistorialClinico
                     Console.WriteLine("\nLA MASCOTA NO TIENE HISTORIAL\n");
 
                 }
-
             }
             else
             {
-                Console.WriteLine("NO SE HA REGISTRADO NINGUNA MASCOTA, NO HAY HISTORIAL PARA MOSTRAR\n");
+                Console.WriteLine("\nNO SE HA REGISTRADO NINGUNA MASCOTA, NO HAY HISTORIAL PARA MOSTRAR\n");
             }
 
         }
@@ -118,12 +126,12 @@ namespace HistorialClinico
             {
                 for (int i = 0; i < listaMascotas.Count; i++)
                 {
-                    Console.WriteLine($"{i+1}. {listaMascotas[i].Nombre}");
+                    Console.WriteLine($"{i+1}. {listaMascotas[i].Nombre} | RAZA: {listaMascotas[i].Raza} | EDAD: {listaMascotas[i].Edad}");
                 }
             }
             else
             {
-                Console.WriteLine("NO SE HA REGISTRADO NINGUNA MASCOTA\n");
+                Console.WriteLine("\nNO SE HA REGISTRADO NINGUNA MASCOTA\n");
             }
         }
 
@@ -133,25 +141,25 @@ namespace HistorialClinico
             {
                 while (true)
                 {
-                    Console.Write("Ingrese el indice de la mascota a eliminar: ");
+                    Console.Write("\nIngrese el indice de la mascota a eliminar: ");
                     int indice = int.Parse(Console.ReadLine());
 
                     if (indice > 0 && indice <= listaMascotas.Count)
                     {
                         listaMascotas.RemoveAt(indice - 1);
-                        Console.WriteLine("MASCOTA ELIMINADA CORRECTAMENTE");
+                        Console.WriteLine("\nMASCOTA ELIMINADA CORRECTAMENTE");
                         break;
                     }
                     else
                     {
-                        Console.WriteLine("INDICE INEXSISTENTE");
-
+                        Console.WriteLine("\nINDICE INEXSISTENTE");
+                        eliminarMascota();
                     }
                 }
             }
             else
             {
-                Console.WriteLine("NO SE HA REGISTRADO NINGUNA MASCOTA, NO SE PUEDE ELIMINAR UNA MASCOTA SI NO EXISTEN MASCOTAS\n");
+                Console.WriteLine("\nNO SE HA REGISTRADO NINGUNA MASCOTA, NO SE PUEDE ELIMINAR UNA MASCOTA SI NO EXISTEN MASCOTAS\n");
             }
         }
 
@@ -159,8 +167,7 @@ namespace HistorialClinico
 
         public void menu()
         {
-            Console.Write("\n" +
-                              "MENU: \n" +
+            Console.Write("\nMENU: \n" +
                               "\n" +
                               "1. Registrar mascota.\n" +
                               "2. Añadir historial a una mascota.\n" +
@@ -195,11 +202,11 @@ namespace HistorialClinico
                     menu();
                     break;
                 case 0:
-                    Console.WriteLine("FINALIZO EL PROGRAMA");
+                    Console.WriteLine("\nFINALIZO EL PROGRAMA");
                     break;
                 default:
 
-                    Console.WriteLine("\nERROR: INGRESO UNA OPCION INVALIDA!!!");
+                    Console.WriteLine("\nERROR: INGRESO UNA OPCION INVALIDA!!!\n");
                     menu();
                     break;
             }
